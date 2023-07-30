@@ -6,6 +6,8 @@ load_dotenv()
 
 api_key = os.getenv('OPENAI_API_KEY')
 
+openai.api_key = api_key
+
 class OpenAIClient:
     def ask(self, question, last_command=None, last_output=None, conversation=None):
         if last_command and last_output:
