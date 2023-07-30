@@ -1,6 +1,10 @@
 import openai
+import os
+from dotenv import load_dotenv
 
-openai.api_key = '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'
+load_dotenv()
+
+api_key = os.getenv('OPENAI_API_KEY')
 
 class OpenAIClient:
     def ask(self, question, last_command=None, last_output=None, conversation=None):

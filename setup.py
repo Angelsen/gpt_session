@@ -12,5 +12,7 @@ setup(
 
     install_requires=[
         "openai",
+        "python-dotenv"
+
     ],
 )
